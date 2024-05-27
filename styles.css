@@ -1,0 +1,52 @@
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+
+#timer {
+    font-size: 48px;
+}
+
+header {
+    font-size: 48px;
+}
+
+
+button:disabled {
+    background-color: #cccccc;
+}
+
+.dark-mode button {
+    background-color: #444444;
+    color: #ffffff;
+}
+
+.dark-mode button:disabled {
+    background-color: #1a1a1a;
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+.gradient-background {
+    background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+    background-size: 300% 300%;
+    animation: gradient-animation 10s ease-in-out infinite;
+}
+
+@keyframes gradient-animation {
+    0%, 100% {
+        background-position: 0% 50%; /* Başlangıç pozisyonu */
+    }
+    50% {
+        background-position: 100% 50%; /* Orta nokta pozisyonu */
+    }
+}

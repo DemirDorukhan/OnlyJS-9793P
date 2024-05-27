@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>    
+    <div class="header text-center pt-5 my-5">
+        <h1><i><b>FOCUS</i> APP</b></h1>
+    </div>
+    
+    <div class="container text-center py-5">
+        <div id="timer">00:00:00</div>
+    </div>
+
+    <div class="quote container py-5 text-center">
+        <h2>Let's Go!</h2>
+    </div>
+
+    <div class="container mb-5">
+        <div class="row justify-content-center align-items-center button-container">
+
+            <div class="col-7 col-lg-3 text-center pb-3">
+                <button type="button" class="btn btn-secondary btn-lg w-100" id="start-btn" onclick="startTimer()">Start</button>
+            </div>
+            <div class="col-7 col-lg-3 text-center pb-3">
+                <button type="button" class="btn btn-secondary btn-lg w-100" id="pause-btn" onclick="pauseTimer()" disabled>Pause</button>
+            </div>
+            <div class="col-7 col-lg-3 text-center pb-3">
+                <button type="button" class="btn btn-secondary btn-lg w-100" id="stop-btn" onclick="stopTimer()" disabled>End</button>
+            </div>
+            <div class="col-7 col-lg-3 text-center pb-3">
+                <button type="button" class="btn btn-secondary btn-lg w-100" id="dark-mode-btn" onclick="toggleDarkMode()">Dark Mode</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer" class="py-4 gradient-background">
+            <p class=" text-body-secondary">Assigned by OnlyJS Academy, Designed By Dorukhan Demir © 2024 </p>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
